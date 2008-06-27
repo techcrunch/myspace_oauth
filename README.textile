@@ -4,10 +4,8 @@ TechCrunch MySpace OAuth tester app.  By "Henry Work":http://www.henrywork.com
 
 h2. Requirements
 
-* pear http_request library "pear.php.net":http://pear.php.net/
-	* this is used for making http requests
-* php 5.2+ _or_ "json-php":http://mike.teczno.com/json.html
-	* used for json parsing
+* pear http_request library "pear.php.net":http://pear.php.net/ (this is used for making http requests)
+* php 5.2+ _or_ "json-php":http://mike.teczno.com/json.html (used for json parsing)
 
 h2. Installation
 
