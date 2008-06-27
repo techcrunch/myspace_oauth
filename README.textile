@@ -1,6 +1,6 @@
-README
+h1. README
 
-TechCrunch MySpace OAuth tester app.
+TechCrunch MySpace OAuth tester app.  By "Henry Work":http://www.henrywork.com
 
 h2. Requirements
 
