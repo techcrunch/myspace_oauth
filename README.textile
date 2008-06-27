@@ -16,6 +16,12 @@ h2. Installation
 # In 'Edit Details', configure the callback urls, external url, external domain
 # Configure your authorization url in app.php on line 72.
 
+h2. Known Issues
+
+# Not properly catching Exceptions
+	* _Server Too Busy_ timeouts.  Apparently MySpace is having some queuing issues via some badly behaving 3rd party apps.  
+	* _Request Token Timeout_.  This app contains no state via a database or session cooke [I want to do this].  So the request token times out if you keep refreshing the results page.
+
 h2. Links
 
 * "TechCrunch MySpace App":http://www.techcrunch.com/myspace/app.php
