@@ -68,8 +68,8 @@ else {
 	$req_token = $myspace->OAuthToken->get_token_from_url($request_token);
 	$req_token_secret = $myspace->OAuthToken->get_token_secret_from_url($request_token);
 
-	$auth_url = $myspace->OAuthToken->get_authorization_url("http://www.techcrunch.com/myspace/app.php?install=1&oauth_token=" . $req_token . "&oauth_token_secret=" . $req_token_secret, $req_token);
-
+	#$auth_url = $myspace->OAuthToken->get_authorization_url("http://www.techcrunch.com/myspace/app.php?install=1&oauth_token=" . $req_token . "&oauth_token_secret=" . $req_token_secret, $req_token);
+	$auth_url = $myspace->OAuthToken->get_authorization_url("YOUR_HTTP_URL/app.php?install=1&oauth_token=" . $req_token . "&oauth_token_secret=" . $req_token_secret, $req_token);
 
 	echo "Install a MySpace App: <a href=\"" . $auth_url . "\" target=\"_new\">click here</a>";
 	echo "<br/>";

@@ -1,18 +1,24 @@
 h1. README
 
-TechCrunch MySpace OAuth tester app.  By "Henry Work":http://www.henrywork.com
+TechCrunch MySpace OAuth tester app.  By "Henry Work":http://www.henrywork.com.  Files originally created by "Viphak Lay":http://viphaklay.com/.
 
 h2. Requirements
 
-* pear http_request library "pear.php.net":http://pear.php.net/ (this is used for making http requests)
+* pear http_request library "pear.php.net":http://pear.php.net/ (used for making http requests)
 * php 5.2+ _or_ "json-php":http://mike.teczno.com/json.html (used for json parsing)
+* MySpace Developer account: "MySpace Developer":http://developer.myspace.com
 
 h2. Installation
 
 # Install pear http_request library: sudo pear install http_request
+# Sign up to be a "MySpace Developer":http://developer.myspace.com
+# Put your CONSUMER_KEY and CONSUMER_SECRET in app-config.php 
+# In 'Edit Details', configure the callback urls, external url, external domain
+# Configure your authorization url in app.php on line 72.
 
 h2. Links
 
 * "TechCrunch MySpace App":http://www.techcrunch.com/myspace/app.php
 * "Original Data Availability article":http://www.techcrunch.com/2008/06/26/myspace-opens-up-the-data-pipe-with-launch-of-data-availability/
 * "Announcement of Tester App":http://www.techcrunch.com/2008/06/26/the-first-test-app-for-myspace-data-availability/
+* "Data Availability REST Resources":http://developer.myspace.com/community/myspace/da.aspx
