@@ -20,49 +20,49 @@ class PeopleAPI extends OAuthBaseAPI {
     
     //NOT SUPPORTED YET
     public function get_people_all($user_id) {
-        $resource = sprintf("/people/%s/%s", $user_id, SelectorType::$ALL);
+        $resource = sprintf("/v2/people/%s/%s", $user_id, SelectorType::$ALL);
         $result = $this->do_get($resource, null);
         return $result;
     }
     
     //OK //fields + startIndex + count
     public function get_people_friends($user_id, $query_parameters = null) {
-        $resource = sprintf("/people/%s/%s", $user_id, SelectorType::$FRIENDS);
+        $resource = sprintf("/v2/people/%s/%s", $user_id, SelectorType::$FRIENDS);
         $result = $this->do_get($resource, null, $query_parameters);
         return $result;
     }
 
     //OK
     public function get_people_friends_current($query_parameters = null) {
-        $resource = sprintf("/people/%s/%s", SelectorType::$ME, SelectorType::$FRIENDS);
+        $resource = sprintf("/v2/people/%s/%s", SelectorType::$ME, SelectorType::$FRIENDS);
         $result = $this->do_get($resource, null, $query_parameters);
         return $result;
     }
     
     //NOT SUPPORTED YET
     public function get_people_by_group($user_id, $group_id) {
-        $resource = sprintf("/people/%s/%s", $user_id, $group_id);
+        $resource = sprintf("/v2/people/%s/%s", $user_id, $group_id);
         $result = $this->do_get($resource, null);
         return $result;
     }
 
     //NOT SUPPORTED YET
     public function get_people_by_pid($user_id, $pid) {
-        $resource = sprintf("/people/%s/%s/%s", $user_id, SelectorType::$ALL, $pid);
+        $resource = sprintf("/v2/people/%s/%s/%s", $user_id, SelectorType::$ALL, $pid);
         $result = $this->do_get($resource, null);
         return $result;
     }
     
     //OK //fields + startIndex + count
     public function get_people_profile($user_id, $query_parameters = null) {
-        $resource = sprintf("/people/%s/%s", $user_id, SelectorType::$SELF);
+        $resource = sprintf("/v2/people/%s/%s", $user_id, SelectorType::$SELF);
         $result = $this->do_get($resource, null, $query_parameters);
         return $result;
     }
     
     //OK
     public function get_people_profile_current($query_parameters = null) {
-        $resource = sprintf("/people/%s/%s", SelectorType::$ME, SelectorType::$SELF);
+        $resource = sprintf("/v2/people/%s/%s", SelectorType::$ME, SelectorType::$SELF);
         $result = $this->do_get($resource, null, $query_parameters);
         return $result;
     }

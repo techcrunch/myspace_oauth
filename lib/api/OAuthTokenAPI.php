@@ -87,7 +87,7 @@ class OAuthTokenAPI extends OAuthBaseAPI {
     //}	
     
     public function get_authorization_url($callbak_url, $request_token) {
-        $resource = '/authorize.aspx';
+        $resource = '/authorize';
         $this->resource_uri = $resource;
         $querystring = '?' . OAuthConstants::$OAUTH_TOKEN . '=' . urlencode($request_token) . '&' . OAuthConstants::$QS_OAUTH_CALLBACK . '=' . urlencode($callbak_url);
         $resource_request = $this->resource_base . $this->resource_uri . $querystring;
